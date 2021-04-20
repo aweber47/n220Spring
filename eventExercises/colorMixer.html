@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixer</title>
+    <style>
+        #colorDiv{
+            height: 100px;
+            width: 600px;
+            background-color: black;
+            margin: auto;
+        }
+        .boxes{
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: lightslategray;
+            width: 187x;
+        }
+        #rgbCode{
+            width: 600px;
+            height: 50px;
+            border: black;
+            background-color: whitesmoke;
+            margin: auto;
+            font-size: large;
+            font-weight: bold;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wholeBox">
+        <div id="colorDiv"></div>
+        <br>
+        <div id="rgbCode"></div>
+        <br>
+        <br>
+        <div id="buttons">
+          <p>Red Color</p><button class="boxes" id="btnOne" value="1">+1</button>
+          <button class="boxes" id="btnFour" value="5">+5</button>
+          <button class="boxes" id="btnSeven" value="10">+10</button>
+          <br>
+        
+          <p>Blue Color</p><button class="boxes" id="btnTwo" value="1">+1</button>
+          <button class="boxes" id="btnFive" value="5">+5</button>
+          <button class="boxes" id="btnEight" value="10">+10</button>
+          <br>
+        
+          <p>Green Color</p><button class="boxes" id="btnThree" value="1">+1</button>
+          <button class="boxes" id="btnSix" value="5">+5</button>
+          <button class="boxes" id="btnNine" value="10">+10</button>
+        </div>
+      </div>
+      <script src="colorMixer.js"></script>
+</body>
+</html>

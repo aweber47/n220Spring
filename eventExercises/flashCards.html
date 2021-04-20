@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Cards</title>
+    <style>
+#front {
+  background: #2b2b2b;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  padding: 30px;
+  color: #FFF;
+  text-align: center;
+  margin: 0px 5px;
+  border: 7px #FFF solid;
+  box-shadow: 1px 1px 4px 0px #00000042;
+}
+
+#back {
+  background: #2b2b2b;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  padding: 30px;
+  color: #FFF;
+  text-align: center;
+  margin: 0px 5px;
+  border: 7px #FFF solid;
+  box-shadow: 1px 1px 4px 0px #00000042;
+}
+    </style>
+</head>
+<body> 
+    <!--This is where the question will be presented-->
+    <p id="front">
+    </p><br>
+    <hr><br>
+    <!--This is where the answer will be presented-->
+    <div id="back">
+    </div><br>
+
+    <div id ="activeCardButtons">
+      <button id="prev" onclick="prevCard()">Previous Card
+    </button>
+    <button id="flip" type="button" value="Flip" onclick="flash()">
+    Flip</button>
+    <button id="next" onclick="nextCard()">Next Card
+    </button>
+    </div>
+    <script src="flashCards.js"></script>
+</body>
+</html>
